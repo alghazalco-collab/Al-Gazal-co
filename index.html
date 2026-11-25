@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>شركة الغزال للصرافة | أسعار الدولار وشحن البطاقات في بغداد</title>
+<meta name="description" content="شركة الغزال للصرافة مساهمة خاصة - أسعار الدولار اليوم، بيع الدولار للمسافرين بسعر 1520، وشحن سويج وتبادل ونيو وكي كارد والرشيد وزين كاش في بغداد.">
+<meta name="theme-color" content="#071426">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#071426;
+    --bg2:#0c1f3a;
+    --ink:#eaf1fb;
+    --mute:#94a8c4;
+    --gold:#ffc83d;
+    --gold2:#ff9d2e;
+    --violet:#7b4dff;
+    --cyan:#35d0ff;
+    --glass:rgba(255,255,255,.06);
+    --line:rgba(255,255,255,.12);
+    --r:24px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Cairo',sans-serif;background:var(--bg);color:var(--ink);
+    line-height:1.8;overflow-x:hidden;font-size:17px;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .num{font-family:'Outfit','Cairo',sans-serif;direction:ltr;unicode-bidi:isolate}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+  .orb{position:fixed;border-radius:50%;filter:blur(90px);opacity:.45;z-index:-1;pointer-events:none}
+  .orb.a{width:480px;height:480px;background:var(--violet);top:-120px;left:-120px;animation:float 14s ease-in-out infinite}
+  .orb.b{width:420px;height:420px;background:#1b6dff;bottom:-140px;right:-100px;animation:float 18s ease-in-out infinite reverse}
+  .orb.c{width:260px;height:260px;background:var(--gold2);top:45%;left:40%;opacity:.12;animation:float 22s ease-in-out infinite}
+  @keyframes float{50%{transform:translate(60px,50px) scale(1.12)}}
+
+  .nav{
+    position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:50;
+    width:min(1140px,calc(100% - 28px));
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+    padding:8px 12px 8px 20px;border-radius:999px;
+    background:rgba(7,20,38,.65);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+    border:1px solid var(--line);
+  }
+  .brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:19px}
+  .logo{
+    width:48px;height:48px;border-radius:50%;background:#fff;overflow:hidden;flex:none;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 3px rgba(255,200,61,.35);
+  }
+  .logo img{width:100%;height:100%;object-fit:cover}
+  .menu{display:flex;gap:6px;list-style:none}
+  .menu a{padding:8px 16px;border-radius:999px;color:var(--mute);font-weight:600;font-size:15px;transition:.2s}
+  .menu a:hover{background:var(--glass);color:#fff}
+  .call{
+    background:linear-gradient(135deg,var(--gold),var(--gold2));color:#2a1a00;font-weight:800;
+    padding:9px 20px;border-radius:999px;font-size:15px;white-space:nowrap;transition:.2s
+  }
+  .call:hover{transform:scale(1.05)}
+
+  .hero{min-height:100vh;display:flex;align-items:center;padding:130px 0 70px}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+  .chip{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;
+    background:var(--glass);border:1px solid var(--line);color:var(--gold);font-size:14px;font-weight:700;margin-bottom:20px
+  }
+  .dot{width:9px;height:9px;border-radius:50%;background:#37e08f;box-shadow:0 0 0 0 rgba(55,224,143,.7);animation:pulse 1.8s infinite}
+  @keyframes pulse{70%{box-shadow:0 0 0 12px rgba(55,224,143,0)}100%{box-shadow:0 0 0 0 rgba(55,224,143,0)}}
+  h1{font-size:clamp(38px,6.2vw,76px);line-height:1.2;font-weight:900;letter-spacing:-.5px}
+  h1 em{
+    font-style:normal;background:linear-gradient(120deg,var(--gold),var(--gold2) 50%,#ff6a3d);
+    -webkit-background-clip:text;background-clip:text;color:transparent
+  }
+  .lead{color:var(--mute);font-size:clamp(17px,2vw,21px);margin:20px 0 32px;max-width:560px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:16px;font-weight:800;font-size:16px;
+    transition:.25s;cursor:pointer;border:1px solid transparent
+  }
+  .btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#2a1a00;box-shadow:0 10px 30px rgba(255,157,46,.3)}
+  .btn.gold:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(255,157,46,.45)}
+  .btn.line{border-color:var(--line);background:var(--glass)}
+  .btn.line:hover{background:rgba(255,255,255,.14);transform:translateY(-3px)}
+
+  .emblem{position:relative;width:min(380px,80vw);aspect-ratio:1;margin:0 auto}
+  .emblem .ring{position:absolute;inset:0;border-radius:50%;border:2px dashed rgba(255,200,61,.5);animation:spin 30s linear infinite}
+  .emblem .ring.r2{inset:-28px;border:1px solid rgba(53,208,255,.35);animation-direction:reverse;animation-duration:44s}
+  .emblem .core{
+    position:absolute;inset:26px;border-radius:50%;background:#fff;overflow:hidden;
+    box-shadow:0 0 80px rgba(123,77,255,.6),0 0 0 10px rgba(255,255,255,.08);animation:bob 6s ease-in-out infinite;
+    display:flex;align-items:center;justify-content:center
+  }
+  .emblem .core img{width:100%;height:100%;object-fit:contain;padding:6%}
+  .tag{
+    position:absolute;padding:8px 16px;border-radius:14px;background:rgba(7,20,38,.8);backdrop-filter:blur(10px);
+    border:1px solid var(--line);font-weight:700;font-size:14px;animation:bob 5s ease-in-out infinite
+  }
+  .tag.t1{top:6%;right:-6%}
+  .tag.t2{bottom:12%;left:-8%;animation-delay:-2s}
+  .tag b{color:var(--gold)}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @keyframes bob{50%{transform:translateY(-12px)}}
+
+  .marquee{overflow:hidden;border-block:1px solid var(--line);background:rgba(255,255,255,.03);padding:14px 0}
+  .track{display:flex;gap:48px;width:max-content;animation:slide 32s linear infinite;font-weight:700;color:var(--mute)}
+  .track span{white-space:nowrap}
+  @keyframes slide{to{transform:translateX(50%)}}
+
+  section{padding:96px 0}
+  .head{margin-bottom:44px}
+  .kicker{color:var(--gold);font-weight:800;font-size:15px;letter-spacing:.5px}
+  h2{font-size:clamp(30px,4.4vw,50px);font-weight:900;line-height:1.3;margin-top:4px}
+  .head p{color:var(--mute);margin-top:10px;max-width:560px}
+
+  .rates{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:stretch}
+  .glass{background:var(--glass);border:1px solid var(--line);border-radius:var(--r);backdrop-filter:blur(10px)}
+  .rate-side{padding:34px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+  .live{display:inline-flex;align-items:center;gap:8px;color:#37e08f;font-weight:800}
+  .rate-side h3{font-size:30px;line-height:1.4}
+  .rate-side p{color:var(--mute)}
+  .frame{overflow:hidden;padding:10px}
+  .frame iframe{width:100%;height:470px;border:0;border-radius:16px;background:#fff;display:block}
+  .note{font-size:14px;color:var(--mute)}
+
+  .travel{
+    position:relative;overflow:hidden;border-radius:32px;padding:56px;
+    background:linear-gradient(120deg,#1a0f55,#3a1fa8 55%,#7b4dff);border:1px solid rgba(255,255,255,.18);
+    display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center
+  }
+  .travel::before{
+    content:"";position:absolute;width:420px;height:420px;border-radius:50%;
+    border:50px solid rgba(255,200,61,.14);left:-120px;top:-160px
+  }
+  .travel h3{font-size:clamp(26px,3.6vw,42px);font-weight:900;line-height:1.35;position:relative}
+  .travel p{color:#cfc4ff;margin-top:8px;position:relative}
+  .price{position:relative;text-align:center}
+  .price strong{
+    display:block;font-size:clamp(74px,11vw,132px);font-weight:800;line-height:1;
+    background:linear-gradient(180deg,#fff,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent
+  }
+  .price small{font-size:18px;color:var(--gold);font-weight:700}
+
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .shot{
+    position:relative;border-radius:var(--r);overflow:hidden;cursor:zoom-in;aspect-ratio:1;
+    border:1px solid var(--line);background:var(--bg2);transition:.35s;
+  }
+  .shot:hover{transform:translateY(-8px) scale(1.015);box-shadow:0 24px 50px rgba(0,0,0,.5);border-color:rgba(255,200,61,.5)}
+  .shot img{width:100%;height:100%;object-fit:cover;transition:.6s}
+  .shot:hover img{transform:scale(1.06)}
+  .shot figcaption{
+    position:absolute;inset:auto 0 0 0;padding:44px 20px 16px;
+    background:linear-gradient(transparent,rgba(7,20,38,.92));font-weight:800;font-size:18px;
+    opacity:0;transform:translateY(12px);transition:.3s
+  }
+  .shot:hover figcaption{opacity:1;transform:none}
+  .shot.missing::after{
+    content:attr(data-name);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-weight:900;font-size:22px;background:linear-gradient(135deg,var(--bg2),#2a1a6e)
+  }
+
+  .lightbox{
+    position:fixed;inset:0;background:rgba(3,8,18,.92);backdrop-filter:blur(8px);z-index:100;
+    display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out
+  }
+  .lightbox.on{display:flex;animation:fade .25s}
+  .lightbox img{max-height:90vh;border-radius:20px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+  @keyframes fade{from{opacity:0}}
+
+  .branches{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .branch{padding:36px;position:relative;overflow:hidden;transition:.3s}
+  .branch:hover{transform:translateY(-6px);border-color:rgba(255,200,61,.45)}
+  .branch .no{position:absolute;left:18px;top:6px;font-size:110px;font-weight:800;line-height:1;color:rgba(255,255,255,.05)}
+  .branch h3{font-size:28px;font-weight:900}
+  .where{color:var(--mute);margin:8px 0 18px;display:flex;gap:10px;align-items:flex-start}
+  .where svg{flex:none;margin-top:6px}
+  .tel{display:block;font-size:34px;font-weight:800;color:var(--gold);margin-bottom:18px}
+  .row{display:flex;gap:10px;flex-wrap:wrap}
+  .row .btn{padding:11px 22px;font-size:15px}
+
+  footer{border-top:1px solid var(--line);padding:34px 0 90px;color:var(--mute);font-size:15px}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+
+  .fab{
+    display:none;position:fixed;bottom:18px;left:18px;right:18px;z-index:60;text-align:center;
+    padding:15px;border-radius:18px;font-weight:900;font-size:18px;
+    background:linear-gradient(135deg,var(--gold),var(--gold2));color:#2a1a00;box-shadow:0 14px 40px rgba(0,0,0,.5)
+  }
+
+  .rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s}
+  .rv.in{opacity:1;transform:none}
+
+  @media(max-width:900px){
+    .menu{display:none}
+    .hero-grid,.rates,.branches,.travel{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .emblem{width:min(280px,70vw);order:-1}
+    .hero{padding-top:110px}
+    .travel{padding:36px 26px}
+    .tag.t1{right:0}.tag.t2{left:0}
+    .fab{display:block}
+    section{padding:70px 0}
+  }
+  @media(max-width:520px){
+    .gallery{gap:12px}
+    .call{display:none}
+    .nav{padding:8px 14px}
+  }
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="orb a"></div><div class="orb b"></div><div class="orb c"></div>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <span class="logo"><img src="assets/logo.png" alt="شعار الغزال" onerror="this.style.display='none'"></span>
+    شركة الغزال للصرافة
+  </a>
+  <ul class="menu">
+    <li><a href="#rates">الأسعار</a></li>
+    <li><a href="#services">الخدمات</a></li>
+    <li><a href="#contact">الفروع</a></li>
+  </ul>
+  <a class="call num" href="tel:07726000774">07726000774</a>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <div class="chip"><span class="dot"></span> أسعار محدّثة خلال اليوم</div>
+      <h1>دولارك بسعر <em>واضح</em>،<br>وبطاقتك تنشحن <em>بثواني</em></h1>
+      <p class="lead">شركة الغزال للصرافة في بغداد: أسعار الدولار اليوم، بيع الدولار للمسافرين بسعر البنك المركزي، وشحن كل البطاقات والمحافظ بسهولة وسرعة.</p>
+      <div class="btns">
+        <a class="btn gold" href="#rates">شوف سعر الدولار</a>
+        <a class="btn line" href="#services">خدماتنا</a>
+      </div>
+    </div>
+    <div class="emblem rv">
+      <div class="ring r2"></div><div class="ring"></div>
+      <div class="core">
+        <img src="assets/logo.png" alt="شعار شركة الغزال للصرافة">
+      </div>
+      <div class="tag t1">سعر المسافرين <b class="num">1520</b></div>
+      <div class="tag t2">شحن فوري ⚡</div>
+    </div>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>سويج</span><span>تبادل</span><span>نيو</span><span>كي كارد</span><span>مصرف الرشيد</span><span>زين كاش</span><span>دولار للمسافرين</span>
+    <span>سويج</span><span>تبادل</span><span>نيو</span><span>كي كارد</span><span>مصرف الرشيد</span><span>زين كاش</span><span>دولار للمسافرين</span>
+    <span>سويج</span><span>تبادل</span><span>نيو</span><span>كي كارد</span><span>مصرف الرشيد</span><span>زين كاش</span><span>دولار للمسافرين</span>
+    <span>سويج</span><span>تبادل</span><span>نيو</span><span>كي كارد</span><span>مصرف الرشيد</span><span>زين كاش</span><span>دولار للمسافرين</span>
+  </div>
+</div>
+
+<section id="rates">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="kicker">أسعار الصرف</div>
+      <h2>سعر الدولار اليوم</h2>
+    </div>
+    <div class="rates">
+      <div class="glass rate-side rv">
+        <span class="live"><span class="dot"></span> مباشر</span>
+        <h3>تابع السعر لحظة بلحظة</h3>
+        <p>البطاقة جنبك تعرض الأسعار من صفحة أسعار الغزال مباشرة، تتحدث بدون ما تحتاج تعيد تحميل الموقع.</p>
+        <p class="note">الأسعار قابلة للتغيير خلال اليوم.</p>
+        <a class="btn line" href="https://alghazal-rates.web.app/" target="_blank" rel="noopener" style="align-self:flex-start">افتح صفحة الأسعار ↗</a>
+      </div>
+      <div class="glass frame rv">
+        <iframe src="https://alghazal-rates.web.app/" title="أسعار الصرف - الغزال" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="travel rv">
+      <div>
+        <div class="kicker">للمسافرين</div>
+        <h3>بيع الدولار للمسافرين<br>بسعر البنك المركزي العراقي</h3>
+        <p>سافر وجيبك مرتاح، تعال لأي فرع من فروعنا.</p>
+      </div>
+      <div class="price num">
+        <strong class="num" data-count="1520">1520</strong>
+        <small>دينار لكل دولار</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="kicker">خدماتنا</div>
+      <h2>شحن بكل سهولة وسرعة</h2>
+      <p>اضغط على أي صورة لتكبيرها، وتواصل معنا لأي خدمة.</p>
+    </div>
+    <div class="gallery">
+      <figure class="shot rv" data-name="مصرف الرشيد"><img src="assets/services/rashid.jpg" alt="شحن بطاقة مصرف الرشيد" loading="lazy"><figcaption>مصرف الرشيد</figcaption></figure>
+      <figure class="shot rv" data-name="كي كارد"><img src="assets/services/keycard.jpg" alt="شحن بطاقة كي كارد" loading="lazy"><figcaption>كي كارد</figcaption></figure>
+      <figure class="shot rv" data-name="تبادل"><img src="assets/services/tabadul.jpg" alt="شحن بطاقات تبادل" loading="lazy"><figcaption>تبادل</figcaption></figure>
+      <figure class="shot rv" data-name="سويج"><img src="assets/services/switch.jpg" alt="إصدار وشحن بطاقات سويج" loading="lazy"><figcaption>سويج</figcaption></figure>
+      <figure class="shot rv" data-name="زين كاش"><img src="assets/services/zaincash.jpg" alt="شحن محفظة زين كاش" loading="lazy"><figcaption>زين كاش</figcaption></figure>
+      <figure class="shot rv" data-name="نيو"><img src="assets/services/neo.jpg" alt="شحن بطاقات نيو" loading="lazy"><figcaption>نيو</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="kicker">تواصل معنا</div>
+      <h2>فرعان بخدمتك في بغداد</h2>
+    </div>
+    <div class="branches">
+      <div class="glass branch rv">
+        <div class="no num">01</div>
+        <h3>الفرع الرئيسي</h3>
+        <div class="where">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#ffc83d"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          <span>بغداد - الأعظمية، شارع الأثاث، قرب تقاطع الكسرة</span>
+        </div>
+        <a class="tel num" href="tel:07726000774">07726000774</a>
+        <div class="row">
+          <a class="btn gold" href="tel:07726000774">اتصل الآن</a>
+          <a class="btn line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=الأعظمية+شارع+الأثاث+تقاطع+الكسرة+بغداد">الخريطة</a>
+        </div>
+      </div>
+      <div class="glass branch rv">
+        <div class="no num">02</div>
+        <h3>فرع الوزيرية</h3>
+        <div class="where">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#ffc83d"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          <span>بغداد - الوزيرية، قرب جامع مصطفى العمري</span>
+        </div>
+        <a class="tel num" href="tel:07711051118">07711051118</a>
+        <div class="row">
+          <a class="btn gold" href="tel:07711051118">اتصل الآن</a>
+          <a class="btn line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=جامع+مصطفى+العمري+الوزيرية+بغداد">الخريطة</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="brand"><span class="logo"><img src="assets/logo.png" alt="" onerror="this.style.display='none'"></span> شركة الغزال للصرافة (مساهمة خاصة)</div>
+    <div>© 2026 · بغداد، العراق</div>
+  </div>
+</footer>
+
+<a class="fab num" href="tel:07726000774">📞 اتصل بنا · 07726000774</a>
+
+<div class="lightbox" id="lb"><img alt=""></div>
+
+<script>
+  const io = new IntersectionObserver((es)=>{
+    es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.rv').forEach((el,i)=>{ el.style.transitionDelay=(i%3)*90+'ms'; io.observe(el); });
+
+  const c = document.querySelector('[data-count]');
+  if(c){
+    const end = +c.dataset.count;
+    const co = new IntersectionObserver(([e])=>{
+      if(!e.isIntersecting) return; co.disconnect();
+      const t0 = performance.now(), d = 1400;
+      (function tick(t){
+        const p = Math.min((t-t0)/d,1), v = Math.round(end*(1-Math.pow(1-p,3)));
+        c.textContent = v; if(p<1) requestAnimationFrame(tick);
+      })(t0);
+    },{threshold:.5});
+    co.observe(c);
+  }
+
+  document.querySelectorAll('.shot img').forEach(img=>{
+    img.addEventListener('error',()=>{ img.parentNode.classList.add('missing'); img.remove(); });
+  });
+
+  const lb = document.getElementById('lb'), lbi = lb.querySelector('img');
+  document.querySelectorAll('.shot').forEach(s=>s.addEventListener('click',()=>{
+    const im = s.querySelector('img'); if(!im) return;
+    lbi.src = im.src; lb.classList.add('on');
+  }));
+  lb.addEventListener('click',()=>lb.classList.remove('on'));
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') lb.classList.remove('on'); });
+</script>
+</body>
+</html>
